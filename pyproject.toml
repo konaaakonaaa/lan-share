@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lanshare"
+version = "1.0.0"
+description = "Передача файлов по локальной сети без сервера: код сопряжения, шифрование, докачка"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+lanshare = "lanshare.__main__:main"
+
+[tool.setuptools]
+packages = ["lanshare"]
